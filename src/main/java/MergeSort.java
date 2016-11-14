@@ -12,7 +12,7 @@ public class MergeSort {
         System.out.println(Arrays.toString(a));*/
     }
 
-    public static int[] merge(int []left,int []right){
+    public  int[] merge(int []left,int []right){
         int lengthResult = left.length+right.length;
         int [] result = new int[lengthResult];
         int indexL=0;
@@ -49,7 +49,7 @@ public class MergeSort {
 
 
 
-public static int[] mergeSortList(int[]B) {
+public  int[] mergeSortList(int[]B) {
     if (B.length <= 1) {
         return B;
     }
@@ -75,6 +75,7 @@ public static int[] mergeSortList(int[]B) {
     left = mergeSortList(left);
     right = mergeSortList(right);
     result=merge(left,right);
+
     return result;
 }
 
